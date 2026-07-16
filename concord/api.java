@@ -49,7 +49,7 @@ public class api {
 
                 System.out.println("SHA-256 => " + encodedKey);
                 System.out.println("Final Insert Statement:");
-                System.out.println("INSERT INTO api_keys (user_id, key_id, api_key, key_name) VALUES ('" + userUUID + "', '" + keyId + "', " + encodedKey + "', 'key-1'\n");
+                System.out.println("INSERT INTO api_keys (user_id, key_id, api_key, key_name) VALUES ('" + userUUID + "', '" + keyId + "', " + encodedKey + "', 'key-1');\n");
                 System.out.println("Remember to access the site at http:" + slash + slash + "concord:8001/#/login?useApiKey=true with your key: => " + apiKey);
 
         }
