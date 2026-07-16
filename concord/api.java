@@ -3,7 +3,7 @@
   James Krolik
 
   I wrote this while reverse engineering the API Key creation routine in the extra mile
-  Using the shell, add a new user to Concord and authenticate as the new user.
+  Add a new user to Concord and authenticate as the new user.
 
   Update with your user UUID from the creation step.  If a sample is needed, this UUID aligns with the program below.
   INSERT INTO USERS (user_id, username, is_admin, user_type, is_disabled) VALUES ('c303282d-f2e6-46ca-a04a-35d3d873712d', 'jim', 't', 'LOCAL', 'f');
@@ -49,7 +49,7 @@ public class api {
 
                 System.out.println("SHA-256 => " + encodedKey);
                 System.out.println("Final Insert Statement:");
-                System.out.println("INSERT INTO api_keys (user_id, key_id, api_key, key_name) VALUES ('" + userUUID + "', '" + keyId + "', " + encodedKey + "', 'key-1');\n");
+                System.out.println("INSERT INTO api_keys (user_id, key_id, api_key, key_name) VALUES ('" + userUUID + "', '" + keyId + "', '" + encodedKey + "', 'key-1');\n");
                 System.out.println("Remember to access the site at http:" + slash + slash + "concord:8001/#/login?useApiKey=true with your key: => " + apiKey);
 
         }
