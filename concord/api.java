@@ -5,7 +5,7 @@
   I wrote this while reverse engineering the API Key creation routine in the extra mile
   Using the shell, add a new user to Concord and authenticate as the new user.
 
-  Update with your user UUID from the creation step.  If a sample is needed, this UUID aligns with the program  below.
+  Update with your user UUID from the creation step.  If a sample is needed, this UUID aligns with the program below.
   INSERT INTO USERS (user_id, username, is_admin, user_type, is_disabled) VALUES ('c303282d-f2e6-46ca-a04a-35d3d873712d', 'jim', 't', 'LOCAL', 'f');
 
 */
